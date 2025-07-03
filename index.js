@@ -44,7 +44,13 @@ const paginaCardapio = document.getElementById('pagina-cardapio');
 btnVoltar.addEventListener('click', () => {
   paginaCardapio.style.display = 'none';
   paginaPrincipal.style.display = 'flex';
-  document.body.style.overflowY = 'hidden';
+  
+  if (paginaPrincipal.scrollHeight > window.innerHeight) {
+    document.body.style.overflowY = 'auto';
+  } else {
+    document.body.style.overflowY = 'hidden';
+  }
+
 });
 
 btnCardapio.addEventListener('click', () => {
