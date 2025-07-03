@@ -41,14 +41,10 @@ const btnVoltar = document.getElementById('btn-voltar');
 const paginaPrincipal = document.getElementById('pagina-principal');
 const paginaCardapio = document.getElementById('pagina-cardapio');
 
-btnCardapio.addEventListener('click', () => {
-  paginaPrincipal.style.display = 'none';
-  paginaCardapio.style.display = 'flex';
-});
-
 btnVoltar.addEventListener('click', () => {
   paginaCardapio.style.display = 'none';
   paginaPrincipal.style.display = 'flex';
+  document.body.style.overflowY = 'hidden';
 });
 
 btnCardapio.addEventListener('click', () => {
