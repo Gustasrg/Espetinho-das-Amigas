@@ -74,6 +74,7 @@ body {
 
     overflow: hidden;
     position: relative;
+    overflow-y: auto;
 
     padding: 64px 20px 0;
 
